@@ -1,0 +1,24 @@
+{
+  "name": "lyricizer",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsc --module CommonJS --outDir dist/cjs && move dist\\cjs\\index.js dist\\index.cjs && rmdir /S /Q dist\\cjs",
+    "parse": "node scripts/parse-dictionary.js"
+  },
+  "files": [
+    "dist",
+    "src/dictionary.json"
+  ],
+  "keywords": ["lyricizer", "lyrics", "lyricize", "lyric", "hyphenate", "hyphen", "hyphenation", "syllable", "stress", "dictionary", "english"],
+  "author": "Herman Fassett",
+  "license": "ISC",
+  "description": "A library for lyricizing texts with hyphenation and stressed syllables.",
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  }
+}

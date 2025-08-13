@@ -1,0 +1,5 @@
+scripts/
+*.ts
+!dist/*.js
+!dist/*.cjs
+!dist/*.d.ts
